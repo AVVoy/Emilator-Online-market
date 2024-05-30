@@ -40,4 +40,13 @@ public class AbstractUser {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) this.getId();
+    }
 }
