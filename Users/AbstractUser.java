@@ -11,7 +11,7 @@ public class AbstractUser {
     private String email;
 
     private String phone;
-    AbstractUser(String name, String phone) {
+    public AbstractUser(String name, String phone) {
         this.name = name;
         this.phone = phone;
         this.id = ++count;
