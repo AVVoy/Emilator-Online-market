@@ -1,3 +1,5 @@
+package Users;
+
 public class AbstractUser {
 
     private String name;
