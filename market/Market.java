@@ -10,7 +10,7 @@ public class Market {
 
     private List<Product> products = new ArrayList<>();
 
-    Market(Salesman owner) {
+    public Market(Salesman owner) {
         this.owner = owner;
     }
 }
