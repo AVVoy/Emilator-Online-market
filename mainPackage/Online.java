@@ -1,3 +1,5 @@
+package mainPackage;
+
 import Users.*;
 import market.*;
 
@@ -16,15 +18,15 @@ public class Online {
     public static void main(String[] args) {
         Admin admin = new Admin("Admin", "01");
         Online online_market = new Online(admin);
-        //admin.setOnline_market(online_market);
+        admin.setOnline_market(online_market);
         Salesman salesman1 = new Salesman("Roga", "01234567890");
         Salesman salesman2 = new Salesman("Boba", "12312312312");
         Market market = new Market(salesman1);
         Market market1 = new Market(salesman2);
         online_market.markets.add(market);
         online_market.markets.add(market1);
-        market.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emilator-Online-market\\market\\products1");
-        market1.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emilator-Online-market\\market\\products2");
+        market.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emilator-mainPackage.Online-market\\market\\products1");
+        market1.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emilator-mainPackage.Online-market\\market\\products2");
 
 
     }
