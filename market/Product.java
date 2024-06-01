@@ -57,4 +57,9 @@ public class Product {
     public void setPathToPhoto(Path pathToPhoto) {
         this.pathToPhoto = pathToPhoto;
     }
+
+    @Override
+    public String toString() {
+        return name + " " + price;
+    }
 }
