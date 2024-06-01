@@ -42,9 +42,9 @@ public class Market {
                     }
                 }
                 Product product = new Product(name, price);
-                if (description != null & !description.isEmpty()) product.setDescription(description);
-                if (characteristics != null & !characteristics.isEmpty()) product.setCharacteristics(characteristics);
-                if (pathToPhoto != null & !pathToPhoto.toString().isEmpty()) product.setPathToPhoto(pathToPhoto);
+                if (description != null && !description.isEmpty()) product.setDescription(description);
+                if (characteristics != null && !characteristics.isEmpty()) product.setCharacteristics(characteristics);
+                if (pathToPhoto != null && !pathToPhoto.toString().isEmpty()) product.setPathToPhoto(pathToPhoto);
                 products.add(product);
             }
 
@@ -53,5 +53,9 @@ public class Market {
         } catch (IOException e) {
             //ignore
         }
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 }

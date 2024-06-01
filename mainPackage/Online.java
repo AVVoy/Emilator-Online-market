@@ -25,9 +25,9 @@ public class Online {
         Market market1 = new Market(salesman2);
         online_market.markets.add(market);
         online_market.markets.add(market1);
-        market.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emilator-mainPackage.Online-market\\market\\products1");
-        market1.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emilator-mainPackage.Online-market\\market\\products2");
-
+        market.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emulator-Online-market\\market\\products1");
+        market1.downloadProducts("D:\\rab_stol\\IdeaProjects\\Emulator-Online-market\\market\\products2");
+        market.getProducts().forEach(System.out::println);
 
     }
 }
